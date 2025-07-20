@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="../static/css/subscribe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="subscription-container">
+        <h1 class="hero-title">Choose Your Subscription Plan</h1>
+        <p class="hero-subtitle">Unlock exclusive travel deals and premium benefits.</p>
+
+        <div class="plans">
+            <div class="plan">
+                <h2>Basic Plan</h2>
+                <p>₹99/month</p>
+                <ul>
+                    <li>Access to standard deals</li>
+                    <li>Monthly travel newsletter</li>
+                    <li>Email support</li>
+                </ul>
+                <button class="subscribe-btn" onclick="redirectToPayment('basic')">Subscribe</button>
+            </div>
+
+            <div class="plan">
+                <h2>Premium Plan</h2>
+                <p>₹149/month</p>
+                <ul>
+                    <li>Exclusive travel deals</li>
+                    <li>Priority customer support</li>
+                    <li>Early access to promotions</li>
+                </ul>
+                <button class="subscribe-btn" onclick="redirectToPayment('premium')">Subscribe</button>
+            </div>
+
+            <div class="plan">
+                <h2>VIP Plan</h2>
+                <p>₹199/month</p>
+                <ul>
+                    <li>All Premium benefits</li>
+                    <li>Personalized itinerary planning</li>
+                    <li>VIP customer service</li>
+                </ul>
+                <button class="subscribe-btn" onclick="redirectToPayment('vip')">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function redirectToPayment(plan) {
+            window.location.href = "payment.html?plan=" + plan;
+        }
+    </script>
+
+</body>
+</html>

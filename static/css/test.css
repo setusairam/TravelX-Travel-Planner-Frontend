@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Section Styles */
+.trip-planner-section {
+    padding: 50px 20px;
+}
+
+.highlight-text {
+    color: #a685ff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.subtext {
+    color: #666;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Features Container */
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Feature Card */
+.feature-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.feature-content {
+    text-align: left;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Hover Effect */
+.feature-card:hover {
+    transform: scale(1.05);
+}

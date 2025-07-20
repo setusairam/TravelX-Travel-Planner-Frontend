@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px; /* Reduced gap between Subscribe and Sign In */
+}
+
+.signin-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.signin-btn:hover {
+    background: gray;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.features, .what-we-do, .reviews, .destinations, .contact {
+    text-align: center;
+    padding: 30px;
+}
+
+.contact {
+    border-top: 1px solid black;
+}
+
+/* General Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading Styling */
+.hero-title {
+    font-size: 50px;
+    font-weight: 900;
+    color: #222;
+    line-height: 1.2;
+}
+
+.bold-text {
+    font-weight: 900;
+}
+
+/* Subtitle Styling */
+.hero-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+    background-color: #002D12;
+}
+
+.btn-icon {
+    font-size: 20px;
+}
+
+
+.why-heading {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.black-text {
+    color: black;
+    font-weight: 900;
+}
+
+.purple-text {
+    color: #B290F6; /* Soft purple color */
+    font-weight: 900;
+}
+
+.why-choose-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 40px;
+    padding: 50px;
+    align-items: center;
+}
+
+.why-item {
+    display: flex;
+    flex-direction: column; /* Stack content properly */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the text */
+    height: 100%;
+}
+
+.why-item.text {
+    align-items: flex-start; /* Aligns text to the left */
+    text-align: left; /* Left aligns text */
+}
+
+.why-item img {
+    width: 50%; /* Increases image size for better balance */
+    max-width: 200px; /* Prevents excessive scaling */
+    height: auto;
+    display: block;
+}
+
+.highlight {
+    background-color: #d4ffbb;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+
+/* Section Styles */
+.trip-planner-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+.highlight-text {
+    color: #a685ff;
+    font-size: 14px;
+    text-transform: uppercase;
+    justify-content: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.subtext {
+    color: #666;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Itineraries Container */
+/* Center align heading and description */
+.section-header {
+    text-align: center;
+    margin-bottom: 20px; /* Reduce space below heading */
+}
+
+/* Itineraries Container */
+.itineraries-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between cards */
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px 0; /* Reduce extra padding */
+}
+
+/* Itinerary Card */
+.itinerary-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Remove unwanted bottom space */
+.itineraries-section {
+    margin-bottom: 0; 
+    padding-bottom: 20px; /* Adjust padding */
+}
+
+/* Itinerary Content */
+.itinerary-content {
+    text-align: left;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .itinerary-card {
+        width: 100%; /* Makes cards full-width on smaller screens */
+        max-width: 400px;
+    }
+}
+
+
+h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Hover Effect */
+.itinerary-card:hover {
+    transform: scale(1.05);
+}
+
+/* Featured Trips Section */
+.featured-trips {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.featured-trips h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.featured-trips p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.trips-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    position: relative;
+}
+
+/* Hide Scrollbar */
+.trips-container::-webkit-scrollbar {
+    display: none;
+}
+
+.trip-card {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.trip-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    padding: 20px;
+    text-align: left;
+}
+
+.trip-overlay h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Next Button */
+.next-button {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.next-button:hover {
+    background-color: #f0f0f0;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+}
+
+.footer-logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #007B55;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+

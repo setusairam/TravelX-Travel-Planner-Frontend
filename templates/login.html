@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+
+    <!-- Authentication Container -->
+    <div class="auth-container">
+        <!-- Login Page (Default) -->
+        <div id="loginPage" class="form-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit" class="auth-btn">Login</button>
+            </form>
+            <div class="auth-links">
+                <button onclick="showPage('forgotPassword')" class="link-btn">Forgot Password?</button>
+                <button onclick="showPage('register')" class="link-btn">Register</button>
+            </div>
+        </div>
+
+        <!-- Register Page -->
+        <div id="registerPage" class="form-box hidden">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="FirstName" placeholder="First Name" required>
+                <input type="text" id="LastName" placeholder="Last Name" required>
+                <input type="text" id="registerName" placeholder="Username" required>
+                <input type="email" id="registerEmail" placeholder="Email" required>
+                <input type="password" id="registerPassword" placeholder="Password" required>
+                <button type="submit" class="auth-btn">Sign Up</button>
+            </form>
+            <button onclick="showPage('login')" class="link-btn">Back to Login</button>
+        </div>
+
+        <!-- Forgot Password Page -->
+        <div id="forgotPasswordPage" class="form-box hidden">
+            <h2>Forgot Password</h2>
+            <form id="forgotPasswordForm">
+                <input type="email" id="forgotEmail" placeholder="Enter your email" required>
+                <button type="submit" class="auth-btn">Reset Password</button>
+            </form>
+            <button onclick="showPage('login')" class="link-btn">Back to Login</button>
+        </div>
+    </div>
+
+    <script src="../static/js/login.js"></script>
+</body>
+</html>

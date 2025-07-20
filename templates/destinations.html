@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Destinations</title>
+    <link rel="stylesheet" href="../static/css/destinations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Featured Trips -->
+    <section class="featured-trips">
+        <h2>Top destinations for your next holiday</h2>
+        <p>Here's where your fellow travellers are headed</p>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for a destination..." onkeyup="filterDestinations()">
+        </div>
+    
+        <div class="trips-container" id="trips-container">
+            
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/Trivandrum1.jpg');">
+                    <div class="trip-overlay">
+                        <h3>Thiruvananthapuram, Kerala</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/pondicherry1.jpg');">
+                    <div class="trip-overlay">
+                        <h3>Pondicherry, Tamilnadu</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/kanyakumari1.jpg');">
+                    <div class="trip-overlay">
+                        <h3>KanyaKumari, Tamilnadu</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/wayanad1.jpg');">
+                    <div class="trip-overlay">
+                        <h3>Wayanad, Kerala</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/madurai1.jpg');">
+                    <div class="trip-overlay">
+                        <h3>Madurai, Tamilnadu</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/munnar.webp');">
+                    <div class="trip-overlay">
+                        <h3>Munnar, Kerala</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/chennai.jpg');">
+                    <div class="trip-overlay">
+                        <h3>Chennai, Tamilnadu</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/Nellore1.webp');">
+                    <div class="trip-overlay">
+                        <h3>Nellore, Andhra Pradesh</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/vijayawada1.avif');">
+                    <div class="trip-overlay">
+                        <h3>Vijayawada, Andhra Pradesh</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/tirumala1.jpg');">
+                    <div class="trip-overlay">
+                        <h3>TIrumala, Andhra Pradesh</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/vizag1.webp');">
+                    <div class="trip-overlay">
+                        <h3>Vishakapatnam, Andhra Pradesh</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/amaravati1.webp');">
+                    <div class="trip-overlay">
+                        <h3>Amaravati, Andhra Pradesh</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/Hyderabad.jpg');">
+                    <div class="trip-overlay">
+                        <h3>Hyderabad, Telangana</h3>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <script>
+        function filterDestinations() {
+            let input = document.getElementById('search-input').value.toLowerCase();
+            let tripCards = document.querySelectorAll('.trip-card-link');
+
+            tripCards.forEach(card => {
+                let title = card.querySelector('.trip-overlay h3').textContent.toLowerCase();
+                card.style.display = title.includes(input) ? 'block' : 'none';
+            });
+        }
+    </script>
+
+</body>
+</html>

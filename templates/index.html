@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <script defer src="../static/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo" onclick="redirectHome()">TravelX</div>
+        <div class="nav-links">
+            <a href="#">Blog</a>
+            <a href="plan.html">Travel Planner</a>
+            <a href="destinations.html">Destinations</a>
+        </div>
+        <div class="nav-buttons">
+            <button class="signin-btn" onclick="redirectTo('subscribe.html')">Subscribe</button>
+            <button class="signin-btn" onclick="redirectTo('login.html')">Sign In</button>
+        </div>
+    </nav>
+    
+<!-- Hero Section -->
+    <section class="hero">
+        <h1 class="hero-title">
+            <span class="bold-text">Your Next Journey,</span> Optimized
+        </h1>
+        <p class="hero-subtitle">
+            Build, personalize, and optimize your itineraries with our free AI trip planner. 
+            Designed for vacations, workations, and everyday adventures.
+        </p>
+        <a href="plan.html" class="hero-btn">
+            <span class="btn-icon">⚡</span> Create a new trip
+        </a>
+    </section>
+    
+
+    <h2 class="why-heading">
+        <span class="black-text">Why</span> 
+        <span class="purple-text">TravelX</span> 
+        <span class="black-text">?</span>
+    </h2>
+    <!-- Why Choose Us Section -->
+<section class="why-choose-us">
+    <div class="why-item">
+        <h2><span class="highlight">The most optimal</span></h2>
+        <p>Craft your perfect itinerary with Trip Planner AI. Our advanced algorithms take into account your selected explore-sights, dining, and lodging preferences to create the optimal travel plan tailored just for you.</p>
+    </div>
+    <div class="why-item">
+        <img src="../images/travelvector4.png" alt="Optimal Travel">
+    </div>
+    <div class="why-item">
+        <img src="../images/travelvector2.png" alt="Get Inspired">
+    </div>
+    <div class="why-item">
+        <h2><span class="highlight">Get Inspired</span></h2>
+        <p>Extract valuable travel insights from Instagram reels and TikToks, explore the mentioned explore-sights, and effortlessly include them in your own adventure with Trip Planner AI.</p>
+    </div>
+</section>
+
+    <section class="trip-planner-section">
+        <p class="highlight-text"></p>
+        <h1>The only tool you'll ever need!</h1>
+        <p class="subtext">
+            Say goodbye to the stress of planning and hello to personalized recommendations, 
+            efficient itineraries, and seamless dining experiences.
+        </p>
+
+        <div class="itineraries-container">
+            <div class="itinerary-card">
+                <div class="itinerary-content">
+                    <h3>Optimal Route Planning</h3>
+                    <p>Our AI algorithms analyze your preferences to craft the most efficient route, saving you time and effort.</p>
+                </div>
+            </div>
+
+            <div class="itinerary-card">
+                <div class="itinerary-content">
+                    <h3>Personalize Your Adventure</h3>
+                    <p>Shape your journey by freely adding, editing, or deleting activities from your itinerary.</p>
+                </div>
+            </div>
+
+            <div class="itinerary-card">
+                <div class="itinerary-content">
+                    <h3>Local Cuisine Recommendations</h3>
+                    <p>Discover local cuisines and hidden gems recommended by our AI, tailored to your taste buds.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Featured Trips -->
+    <section class="featured-trips">
+        <h2>Top destinations for your next holiday</h2>
+        <p>Here's where your fellow travellers are headed</p>
+    
+        <div class="trips-container">
+            
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/Trivandrum1.jpg');">
+                    <div class="trip-overlay">
+                        <h3>Thiruvananthapuram, Kerala</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/pondicherry1.jpg');">
+                    <div class="trip-overlay">
+                        <h3>Pondicherry, Tamilnadu</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/kanyakumari1.jpg');">
+                    <div class="trip-overlay">
+                        <h3>KanyaKumari, Tamilnadu</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/wayanad1.jpg');">
+                    <div class="trip-overlay">
+                        <h3>Wayanad, Kerala</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/madurai1.jpg');">
+                    <div class="trip-overlay">
+                        <h3>Madurai, Tamilnadu</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/munnar.webp');">
+                    <div class="trip-overlay">
+                        <h3>Munnar, Kreala</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="destinations.html" class="trip-card-link">
+                <div class="trip-card" style="background-image: url('../images/chennai.jpg');">
+                    <div class="trip-overlay">
+                        <h3>Chennai, Tamilnadu</h3>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo.png" alt="TX">
+                <span>TravelX</span>
+            </div>
+    
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Get started</h3>
+                    <a href="#">Planning a trip to Portugal</a>
+                    <a href="#">Planning a trip to Japan</a>
+                    <a href="#">Planning a trip to Korea</a>
+                    <a href="#">Planning a trip to Maldives</a>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    
+        <p class="footer-bottom">
+            © Made With ❤️ By Setu Sai Ram.
+        </p>
+    </footer>
+</body>
+</html>

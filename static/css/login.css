@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    animation: slideDown 0.8s ease-out;
+}
+
+/* Slide down effect for heading */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: black;
+    margin: 5px auto 20px;
+}
+
+.auth-container {
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input glow effect on focus */
+input:focus {
+    border-color: #000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.auth-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+/* Button hover animation */
+.auth-btn:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+/* Button click animation */
+.auth-btn:active {
+    transform: scale(0.95);
+}
+
+/* Shake animation for incorrect login */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+/* Apply shake effect when form is invalid */
+.invalid {
+    animation: shake 0.3s ease-in-out;
+}
+
+.auth-links {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-btn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover effect for links */
+.link-btn:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
